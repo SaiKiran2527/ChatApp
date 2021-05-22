@@ -1,0 +1,137 @@
+body {
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+
+  .container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .darker {
+    border-color: #ccc;
+    background-color: #ddd;
+  }
+  
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  .container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+  }
+  
+  .time-right {
+    float: right;
+    color: #aaa;
+  }
+  
+  .time-left {
+    float: left;
+    color: #999;
+  }
+  .publisher {
+      position: relative;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      padding: 12px 20px;
+      background-color: #f9fafb
+  }
+  #sen{
+    width: 70%;
+    position:relative; 
+    left: 400px;
+  }
+  #rec{
+    width: 70%;
+    
+  }
+  .publisher>*:first-child {
+      margin-left: 0
+  }
+  
+  .publisher>* {
+      margin: 0 8px
+  }
+.publisher 
+{ 
+    position: fixed;
+    width: 94.5%;
+  bottom: 10px;
+  border: 3px solid #8AC007;
+}
+  .publisher-input {
+      
+      -webkit-box-flex: 1;
+      flex-grow: 1;
+      border: none;
+      outline: none !important;
+      background-color: transparent
+  }
+  
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+      font-family: Roboto, sans-serif;
+      font-weight: 300
+  }
+  
+  .publisher-btn {
+      background-color: transparent;
+      border: none;
+      color: #8b95a5;
+      font-size: 16px;
+      cursor: pointer;
+      overflow: -moz-hidden-unscrollable;
+      -webkit-transition: .2s linear;
+      transition: .2s linear
+  }
+  
+  .file-group {
+      position: relative;
+      overflow: hidden
+  }
+  
+  .publisher-btn {
+    
+      background-color: transparent;
+      border: none;
+      color: #cac7c7;
+      font-size: 16px;
+      cursor: pointer;
+      overflow: -moz-hidden-unscrollable;
+      -webkit-transition: .2s linear;
+      transition: .2s linear
+  }
+  
+  .file-group input[type="file"] {
+      
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
+      width: 20px
+  }
+  
+  .text-info {
+      color: #48b0f7 !important
+  }
